@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+
+    --ff: 'Nunito', sans-serif;
+
+    --fw-basic: 300;
+    --fw-medium: 600;
+    --fw-bold: 900;
+
+    --f-size-h2: 4rem;
+    --f-size-h3: 2rem;
+    --f-size-p: 1.4rem;
+
+    --primary-clr: #023047;
+    --secondary-clr: #fb8500;
+    --neutral-clr: #fff;
+
+    --box-shadow: 0 0 1em rgba(0,0,0, .25);
+    --border-radius: 5px;
+
+    --card-w: 25rem;
+    --card-h: 35rem;
+    --card-padding: 1rem 1.5rem 1rem 1.5rem;
+    --padding-top-btm: 1.5rem 0 1.5rem 0;
+    --padding: 1rem;
+}
+.card {
+    width: var(--card-w);
+    height: var(--card-h);
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: var(--card-padding);
+
+}
+
+.card h3 {
+    background-color: var(--primary-clr);
+    width: var(--card-w);
+    text-align: center;
+    padding: var(--padding-top-btm);
+    color: var(--neutral-clr);
+    font-size: var(--f-size-h3);
+    font-weight: var(--fw-medium);
+    border-top-right-radius: var(--border-radius);
+    border-top-left-radius: var(--border-radius);
+}
+.price {
+    display: flex;
+    align-items: center;
+}
+.price span {
+    color: var(--primary-clr);
+    font-size: var(--f-size-h2);
+    font-weight: var(--fw-bold);
+}
+.price p {
+    color: var(--primary-clr);
+    font-size: var(--f-size-p);
+}
+.card-content p {
+    font-size: var(--f-size-p);
+    padding-top: var(--padding);
+}
+.card button {
+    width: 9rem;
+    margin-left: calc(var(--padding) * 1.5);
+    margin-top: calc(var(--padding) * 2);
+    background-color: var(--primary-clr);
+    color: var(--neutral-clr);
+    padding-top: var(--padding);
+    padding-bottom: var(--padding);
+    font-weight: var(--fw-bold);
+    border-radius: var(--border-radius);
+    border: none;
+}
+
+.card-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 3rem;
+}
+.best-value-price span {
+    color: var(--secondary-clr);
+}
+.best-value-price p {
+    color: var(--secondary-clr);
+}
+.best-value-price-card h3 {
+    background-color: var(--secondary-clr);
+}
+.best-value-price-card button {
+    background-color: var(--secondary-clr);
+}
